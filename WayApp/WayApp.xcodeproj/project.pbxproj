@@ -15,6 +15,8 @@
 		F600D21B28FE795A0083166E /* WayAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600D21A28FE795A0083166E /* WayAppUITestsLaunchTests.swift */; };
 		F600D22828FE79D90083166E /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600D22728FE79D90083166E /* mainView.swift */; };
 		F600D22B28FE7B3B0083166E /* loginTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F600D22A28FE7B3B0083166E /* loginTile.swift */; };
+		F6652FDA29016AAF0023D448 /* dashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6652FD929016AAF0023D448 /* dashboardView.swift */; };
+		F6652FDC29016D230023D448 /* appView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6652FDB29016D230023D448 /* appView.swift */; };
 		F6657A9929006ABF009F0FD1 /* mainBG.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6657A9829006ABF009F0FD1 /* mainBG.swift */; };
 		F6657A9C29009A97009F0FD1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6657A9B29009A97009F0FD1 /* User.swift */; };
 		F6657A9E29009BE6009F0FD1 /* callWayAppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6657A9D29009BE6009F0FD1 /* callWayAppAPI.swift */; };
@@ -52,10 +54,13 @@
 		F600D21A28FE795A0083166E /* WayAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WayAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F600D22728FE79D90083166E /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
 		F600D22A28FE7B3B0083166E /* loginTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTile.swift; sourceTree = "<group>"; };
+		F6652FD929016AAF0023D448 /* dashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardView.swift; sourceTree = "<group>"; };
+		F6652FDB29016D230023D448 /* appView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appView.swift; sourceTree = "<group>"; };
 		F6657A9829006ABF009F0FD1 /* mainBG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainBG.swift; sourceTree = "<group>"; };
 		F6657A9B29009A97009F0FD1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6657A9D29009BE6009F0FD1 /* callWayAppAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = callWayAppAPI.swift; sourceTree = "<group>"; };
 		F66B10D428FF3E070038D2F9 /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
+		F66C5EBE2901E2020010C1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F66D94FF28FF2C1E001BB2D4 /* registerTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerTile.swift; sourceTree = "<group>"; };
 		F66D950128FF2E75001BB2D4 /* settingsTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsTile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +113,8 @@
 		F600D1FC28FE79580083166E /* WayApp */ = {
 			isa = PBXGroup;
 			children = (
+				F66C5EBE2901E2020010C1BB /* Info.plist */,
+				F6652FD829016A9E0023D448 /* Views */,
 				F6657A9729006AB1009F0FD1 /* BGS */,
 				F66B10D328FF3DF50038D2F9 /* Auth */,
 				F600D22928FE7B260083166E /* Tiles */,
@@ -153,6 +160,15 @@
 				F66D950128FF2E75001BB2D4 /* settingsTile.swift */,
 			);
 			path = Tiles;
+			sourceTree = "<group>";
+		};
+		F6652FD829016A9E0023D448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6652FD929016AAF0023D448 /* dashboardView.swift */,
+				F6652FDB29016D230023D448 /* appView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F6657A9729006AB1009F0FD1 /* BGS */ = {
@@ -313,8 +329,10 @@
 				F66D950028FF2C1E001BB2D4 /* registerTile.swift in Sources */,
 				F66D950228FF2E75001BB2D4 /* settingsTile.swift in Sources */,
 				F600D22B28FE7B3B0083166E /* loginTile.swift in Sources */,
+				F6652FDA29016AAF0023D448 /* dashboardView.swift in Sources */,
 				F600D1FE28FE79580083166E /* WayAppApp.swift in Sources */,
 				F6657A9C29009A97009F0FD1 /* User.swift in Sources */,
+				F6652FDC29016D230023D448 /* appView.swift in Sources */,
 				F66B10D528FF3E070038D2F9 /* loginView.swift in Sources */,
 				F600D22828FE79D90083166E /* mainView.swift in Sources */,
 				F6657A9929006ABF009F0FD1 /* mainBG.swift in Sources */,
@@ -479,6 +497,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WayApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WayApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -507,6 +526,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WayApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WayApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

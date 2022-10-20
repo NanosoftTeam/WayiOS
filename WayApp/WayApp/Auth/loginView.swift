@@ -69,27 +69,40 @@ struct loginView: View {
                     }
                     HStack {
                         Spacer()
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(.white)
-                            .opacity(0.1)
-                            .background{
-                                Color(.white)
-                                    .opacity(0.08)
-                                    .blur(radius: 10)
-                            }
-                            .background {
+                        Button {
+                            let api: API = API()
+                            print(api.call(email: "norwagov43@gmail.com", password: "hj83367107"))
+                        } label: {
+                            ZStack {
+                                HStack {
+                                    Text("Login")
+                                    Image(systemName: "person.crop.square.filled.and.at.rectangle")
+                                }.foregroundColor(.white)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 25, weight: .semibold))
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(
-                                        .linearGradient(.init(colors: [
-                                            .purple,
-                                            .purple.opacity(0.5),
-                                            .clear,
-                                            .clear,
-                                            .blue,
-                                        ]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                                    )
+                                    .fill(.white)
+                                    .opacity(0.1)
+                                    .background{
+                                        Color(.white)
+                                            .opacity(0.08)
+                                            .blur(radius: 10)
+                                    }
+                                    .background {
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(
+                                                .linearGradient(.init(colors: [
+                                                    .purple,
+                                                    .purple.opacity(0.5),
+                                                    .clear,
+                                                    .clear,
+                                                    .blue,
+                                                ]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                                            )
+                                    }
+                                    .frame(width: 150, height: 70)
                             }
-                            .frame(width: 150, height: 70)
+                        }
                         Spacer()
                         RoundedRectangle(cornerRadius: 25)
                             .fill(.white)
@@ -116,7 +129,6 @@ struct loginView: View {
                     }
                     Spacer()
                 }
-                
             }
         }
     }
